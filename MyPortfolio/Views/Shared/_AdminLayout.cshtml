@@ -21,15 +21,34 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="~/Templates/01/css/bootstrap.min.css">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Kadir Halı</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Siteye Git</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CV'mi İndir</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gelen Mesajlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Çıkış Yap</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Style -->
+
     <link rel="stylesheet" href="~/Templates/01/css/style.css">
-    <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
-    </ul>
+
     <title>Sidebar #1</title>
     @RenderBody()
 </head>
