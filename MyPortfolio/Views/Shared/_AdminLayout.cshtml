@@ -44,16 +44,16 @@
             </ul>
         </div>
     </nav>
-
+    @RenderBody()
     <!-- Style -->
+
 
     <link rel="stylesheet" href="~/Templates/01/css/style.css">
 
     <title>Sidebar #1</title>
-    @RenderBody()
+
 </head>
 <body>
-
 
     <aside class="sidebar">
         <div class="toggle">
@@ -86,8 +86,8 @@
             <div class="nav-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="/Education/Index/">Education</a></li>
+                    <li><a href="/Skill/Index">Skills</a></li>
                     <li><a href="#">Experiences</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">CV</a></li>
