@@ -396,6 +396,7 @@
     <Content Include="Templates\iportfolio-starter\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Templates\iportfolio-starter\assets\fonts\FontAwesome.otf" />
     <Content Include="Views\Service\Index.cshtml" />
+    <Content Include="Views\Service\AddService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

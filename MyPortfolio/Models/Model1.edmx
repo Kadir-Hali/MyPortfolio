@@ -50,7 +50,7 @@
           <Property Name="ServiceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ServiceName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="MyPortfolioDbEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MyPortfolioDbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="About" EntityType="Self.About" />
           <EntitySet Name="Service" EntityType="Self.Service" />
         </EntityContainer>
@@ -59,7 +59,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="MyPortfolioDbModelStoreContainer" CdmEntityContainer="MyPortfolioDbEntities1">
+        <EntityContainerMapping StorageEntityContainer="MyPortfolioDbModelStoreContainer" CdmEntityContainer="MyPortfolioDbEntities">
           <EntitySetMapping Name="About">
             <EntityTypeMapping TypeName="MyPortfolioDbModel.About">
               <MappingFragment StoreEntitySet="About">

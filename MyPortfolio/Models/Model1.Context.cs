@@ -7,18 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using MyPortfolio.Models;
-
-namespace MyPortfolio
+namespace MyPortfolio.Models
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MyPortfolioDbEntities1 : DbContext
+    public partial class MyPortfolioDbEntities : DbContext
     {
-        public MyPortfolioDbEntities1()
-            : base("name=MyPortfolioDbEntities1")
+        public MyPortfolioDbEntities()
+            : base("name=MyPortfolioDbEntities")
         {
         }
     
