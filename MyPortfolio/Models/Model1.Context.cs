@@ -27,5 +27,6 @@ namespace MyPortfolio.Models
     
         public virtual DbSet<About> About { get; set; }
         public virtual DbSet<Service> Service { get; set; }
+        public virtual DbSet<Testimonial> Testimonial { get; set; }
     }
 }

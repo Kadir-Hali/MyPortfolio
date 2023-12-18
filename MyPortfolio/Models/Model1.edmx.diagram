@@ -7,6 +7,7 @@
       <Diagram DiagramId="283c8a58e4ac48e793ad79ba6eec5634" Name="Diagram1">
         <EntityTypeShape EntityType="MyPortfolioDbModel.About" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MyPortfolioDbModel.Service" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPortfolioDbModel.Testimonial" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
