@@ -1,0 +1,20 @@
+﻿@model MyPortfolio.Models.Award
+@{
+    ViewBag.Title = "UpdateAward";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Ödül Güncelleme Sayfası</h2>
+
+<form method="post">
+    <br/>
+    <label>Ödül ID</label>
+    @Html.TextBoxFor(x => x.AwardID, new { @class = "form-control" })
+    <label>Ödül Başlığı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <label>Ödül Açıklaması</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br/>
+    <button class="btn btn-outline-success">Verileri Güncelle</button>
+</form>
+
