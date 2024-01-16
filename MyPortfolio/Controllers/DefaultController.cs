@@ -1,9 +1,12 @@
-﻿using System.Web.Mvc;
+﻿using MyPortfolio.Models;
+using System.Linq;
+using System.Web.Mvc;
 
 namespace MyPortfolio.Controllers
 {
     public class DefaultController : Controller
     {
+        MyPortfolioDbEntities db = new MyPortfolioDbEntities();
         public ActionResult Index()
         {
             return View();
@@ -20,6 +23,21 @@ namespace MyPortfolio.Controllers
         }
 
         public PartialViewResult PartialQuickContact()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult PartialFeature()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult PartialService()
+        {
+            var values = db.Service.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialSkill() 
         {
             return PartialView();
         }
