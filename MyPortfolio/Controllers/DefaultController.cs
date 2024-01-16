@@ -13,5 +13,15 @@ namespace MyPortfolio.Controllers
         {
             return PartialView();
         }
+
+        public PartialViewResult PartialNavbar()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult PartialQuickContact()
+        {
+            return PartialView();
+        }
     }
 }
