@@ -47,5 +47,10 @@ namespace MyPortfolio.Controllers
         {
             return PartialView();
         }
+
+        public PartialViewResult PartialTestimonial()
+        {
+            return PartialView();
+        }
     }
 }
