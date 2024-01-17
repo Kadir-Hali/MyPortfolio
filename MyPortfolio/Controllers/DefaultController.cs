@@ -39,6 +39,12 @@ namespace MyPortfolio.Controllers
         }
         public PartialViewResult PartialSkill() 
         {
+            var values= db.Skill.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult PartialAward() 
+        {
             return PartialView();
         }
     }
