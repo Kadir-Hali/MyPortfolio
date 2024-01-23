@@ -50,6 +50,17 @@ namespace MyPortfolio.Controllers
 
         public PartialViewResult PartialTestimonial()
         {
+            var values = db.Testimonial.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult PartialClient()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult PartialContact()
+        {
             return PartialView();
         }
     }

@@ -273,6 +273,8 @@
     <Content Include="Templates\iportfolio-starter\assets\images\file.png" />
     <Content Include="Templates\iportfolio-starter\assets\images\file1.png" />
     <Content Include="Templates\iportfolio-starter\assets\images\file2.png" />
+    <Content Include="Templates\iportfolio-starter\assets\images\person_icon.jpg" />
+    <Content Include="Templates\iportfolio-starter\assets\images\person_icon_2.jpg" />
     <Content Include="Templates\iportfolio-starter\assets\images\profile_photo.jpg" />
     <Content Include="Templates\iportfolio-starter\assets\images\skills.png" />
     <Content Include="Templates\iportfolio-starter\assets\images\team1.jpg" />
@@ -436,6 +438,8 @@
     <Content Include="Views\Default\PartialSkill.cshtml" />
     <Content Include="Views\Default\PartialAward.cshtml" />
     <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialClient.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
