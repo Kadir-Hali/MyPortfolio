@@ -26,7 +26,7 @@ namespace MyPortfolio.Controllers
         {
             db.Contact.Add(contact);
             db.SaveChanges();
-            return RedirectToAction("Index","Default");
+            return RedirectToAction("Index","Default"); // child olduğu için ana sayfayı açamıyor çözmeye çalış!!!!!!
         }
 
         public PartialViewResult PartialScript()
