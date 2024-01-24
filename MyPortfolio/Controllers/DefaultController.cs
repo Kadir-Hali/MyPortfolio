@@ -59,9 +59,5 @@ namespace MyPortfolio.Controllers
             return PartialView();
         }
 
-        public PartialViewResult PartialContact()
-        {
-            return PartialView();
-        }
     }
 }
