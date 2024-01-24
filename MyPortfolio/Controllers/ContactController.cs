@@ -14,13 +14,24 @@ namespace MyPortfolio.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            ViewBag.description = db.Address.Select(x => x.Description).FirstOrDefault();
+            ViewBag.phone = db.Address.Select(x => x.Phone).FirstOrDefault();
+            ViewBag.mail = db.Address.Select(x => x.Mail).FirstOrDefault();
+            ViewBag.addressDetail = db.Address.Select(x => x.AddressDetail).FirstOrDefault();
             return View();
         }
 
         [HttpPost]
-        public ActionResult Index(string x)
+        public ActionResult Index(Contact contact)
         {
-            return View();
+            db.Contact.Add(contact);
+            db.SaveChanges();
+            return RedirectToAction("Index","Default");
+        }
+
+        public PartialViewResult PartialScript()
+        {
+            return PartialView();
         }
     }
 }
