@@ -316,6 +316,7 @@
     <Content Include="Templates\web\css\style.css" />
     <Content Include="Templates\web\fonts\fontawesome-webfont.svg" />
     <Content Include="Templates\web\images\bg.jpg" />
+    <Content Include="Templates\web\images\register_back.jpg" />
     <Content Include="Templates\web\index.html" />
     <Content Include="Templates\web\w3layouts-License.txt" />
     <Content Include="Web.config" />
