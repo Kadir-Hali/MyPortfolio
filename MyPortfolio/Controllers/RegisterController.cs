@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyPortfolio.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace MyPortfolio.Controllers
 {
     public class RegisterController : Controller
     {
+        MyPortfolioDbEntities db = new MyPortfolioDbEntities();
         [HttpGet]
         public ActionResult Index()
         {
@@ -15,9 +17,11 @@ namespace MyPortfolio.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string x)
-        {  
-            return View(); 
+        public ActionResult Index(Admin admin)
+        {
+            db.Admin.Add(admin);
+            db.SaveChanges();
+            return RedirectToAction("Index","Login"); 
         }
     }
 }
